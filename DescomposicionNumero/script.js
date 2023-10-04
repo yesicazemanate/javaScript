@@ -1,20 +1,16 @@
 let numero = prompt("ingrese un numero") 
+let arrayNumeros=[]
 let contador = 0
 let primos=""
-for (let i = 1; i < numero.length; i++){
-    for (let j; j < i.length; j++){
-        if (i % j == 0) {
-            contador += 1
-            if (contador == 2) {
-                primos += i
-            }
-
-        }
+for (let i = 0; i <= numero; i++) {
+    let number=i
+    for (let j = 0; j < number.length; j++) {
+        console.log(j)
+         
     }
-    
-   console.log(primos)
-   
 }
+   
+
 
 
 
