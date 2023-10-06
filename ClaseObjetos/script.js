@@ -33,13 +33,6 @@ class Ciudad{
     }
 }
 
-let city1 = new Ciudad("popayan", "cauca", 4000000, "payanes", 190001)
-let city2 = new Ciudad("cali","valle del cauca",5000000,"caleños", 190002)
-let ciudades = [city1, city2]
-
-
-
-console.log(ciudades)
 
 //console.log(cuidad.lugaresTuristicos.iglesias[2])
 //objeto2
@@ -65,10 +58,6 @@ class Animal {
     }
 }
 
-let animal1 = new Animal("panthera tigris", 160, "felino")
-let animal2 = new Animal("perro",20, "canino")
-let animales = [animal1, animal2]
-console.log( animales)
 //objeto3
 
 const estudiante = {
@@ -93,9 +82,21 @@ class Estudiante {
     }
 }
 
+let city1 = new Ciudad("popayan", "cauca", 4000000, "payanes", 190001)
+let city2 = new Ciudad("cali","valle del cauca",5000000,"caleños", 190002)
+let animal1 = new Animal("panthera tigris", 160, "felino")
+let animal2 = new Animal("perro",20, "canino")
 let estudiante1 = new Estudiante("camilo","gonzales", 16, "noveno")
 let estudiante2 = new Estudiante("maria", "pinto",14,"octavo")
+
+let ciudades = []
+let animales = [animal1, animal2]
 let estudiantes = [estudiante1, estudiante2]
+
+ciudades.push(city1, city2)
+
+console.log(ciudades)
+console.log(animales)
 console.log(estudiantes)
 //objeto3
 
