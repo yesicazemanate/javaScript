@@ -1,10 +1,10 @@
 let numero
-let acumulado=""
+let acumulado=0
 let contador=0
 while (numero != 0) {
-    numero = prompt("ingrese un numeros")
+    numero = parseInt(prompt("ingrese un numeros"))
     if (numero != 0) { 
-        acumulado += numero + " "
+        acumulado += numero
         contador += 1
     }
 

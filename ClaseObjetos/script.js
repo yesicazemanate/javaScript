@@ -80,6 +80,7 @@ class Estudiante {
     mostrarEstudiante() {
         console.log(this.nombre)
     }
+
 }
 
 let city1 = new Ciudad("popayan", "cauca", 4000000, "payanes", 190001)
@@ -100,3 +101,4 @@ console.log(animales)
 console.log(estudiantes)
 //objeto3
 
+const materia = console.log(estudiantes.estudiante.materias);
