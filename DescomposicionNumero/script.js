@@ -12,8 +12,7 @@
             contador=0
         }
     }    
-}
-let numeros=parseInt(prompt("ingrese un numero"))
+
 function listaPrimos(numero){
     let lista=[]
     for(let i=1;i<=numero;i++){
@@ -25,27 +24,26 @@ let arrayPrimos=listaPrimos(numeros)
 let filtro = arrayPrimos.filter(function(x) {
     return x !== undefined;
 });
-
+}*/
+let numeros=parseInt(prompt("ingrese un numero"))
 let factoresPrimos=[]
 let factoPrimos = []
 let resultado=[]
+let divisores=2
 while (numeros != 1) {
-    for (let i = 0; i < filtro.length; i++) {
-        if (numeros % filtro[i] == 0) {
-            factoresPrimos += filtro[i] + " "
-            numeros /= filtro[i]
-          
+        if (numeros % divisores == 0) {
+            factoresPrimos += divisores + " "
+            numeros /= divisores
+            resultado.push(numeros)
         } else {
-            i++
+            divisores+=1
         }
-    
-    }
-    factoPrimos.push(factoresPrimos)
-    resultado.push(numeros)
 }
+factoPrimos.push(factoresPrimos)
+
 console.log(factoPrimos)
-console.log(resultado)*/
-function esPrimo(numero) {
+console.log(resultado)
+/*function esPrimo(numero) {
     let contador = 0;
     if (numero > 1) {
         for (let i = 1; i <= numero; i++) {
@@ -90,4 +88,4 @@ while (numeros != 1) {
 resultado.push(numeros);
 
 console.log("Factores primos:", factoresPrimos);
-console.log("Resultado:", resultado);
+console.log("Resultado:", resultado);*/
