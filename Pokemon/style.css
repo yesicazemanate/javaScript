@@ -1,0 +1,15 @@
+.div{
+    border-radius: 10px;
+    background-color: rgb(18, 182, 174);
+    width: 200px;
+    height: max-content;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-family: 'Nosifer', sans-serif;
+}
+ul{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
